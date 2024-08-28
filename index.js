@@ -29,21 +29,20 @@ function changeImage(id){
       document.getElementById('title').textContent = "Score :"+score;
        console.log(score); 
     }else{
-       let imgs= document.getElementsByTagName("img");
-       for(i=0;i<imgs.length;i++){
-        for(j=0;j<matchs.length;j++){
-         if(imgs[i].src !=matchs[j]){
-            imgs[i].src="images/images.jfif";
-         }
-        }
+
+            let imgs=document.getElementsByTagName('img');
+            for(k=0;k<imgs.length;k++){
+               if(imgs[k].src==choices[choices.length-2] || imgs[k].src==choices[choices.length-1]){
+                 imgs[k].src="images/images.jfif";
+               }
+            }
          
-        
        } 
        
       
     }
    }
   
-}
+
 
 
